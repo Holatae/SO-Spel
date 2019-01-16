@@ -1,10 +1,10 @@
-def change_name():
+def change_name(name):
     pass
 
-def save():
+def save(slot):
     pass
 
-def load_save():
+def load_save(slot):
     pass
 
 def move_forward():
