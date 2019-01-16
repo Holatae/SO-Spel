@@ -21,3 +21,9 @@ def move_back():
 
 def get_version():
     return 0.1
+
+def new_game():
+    print("test")
+
+def quit():
+    pass
