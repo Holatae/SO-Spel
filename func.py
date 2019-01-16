@@ -18,3 +18,6 @@ def move_right():
 
 def move_back():
     pass
+
+def get_version():
+    return 0.1
