@@ -7,12 +7,16 @@ options = {
 }
 
 def start_menu():
-    print("Välkommen till SO-Spelet version " + str(func.get_version()) + "\n")
+    #func.delay_print("Välkommen till SO-Spelet version " + str(func.get_version()) + "\n", 0.25)
     print("Välj allternativ")
     print("1. Nytt spel")
     print("2. Ladda spel")
     print("3. Avslut")
-    options[int(input())]()
+
+    try:
+        options[int(input())]()
+    except Exception as e:
+        pass
     
 
 
