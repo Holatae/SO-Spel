@@ -26,11 +26,7 @@ def get_version():
     return 0.1
 
 def new_game():
-    f = open("Begining.txt", "r")
-    print(f.readlines())
-    words = f.readlines()
-    words.join()
-    delay_print(f.readlines(), 0.25)
+    delay_print("Du vaknar. Du vet inte vart du är\nDu har liggat å sovit länge\nDu måste hitta en väg ut.", 0.1)
 
 def quit():
     pass
@@ -40,3 +36,8 @@ def delay_print(words, delay_time):
         sys.stdout.write(letter)
         sys.stdout.flush()
         time.sleep(delay_time)
+
+def menu(word):
+    delay_print(word, 0.1)
+    while True:
+        input()
