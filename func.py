@@ -1,8 +1,9 @@
 import time
 import sys
+import player
 
 def change_name(name):
-    pass
+    player.name = name
 
 def save(slot):
     pass
