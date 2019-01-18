@@ -7,7 +7,7 @@ options = {
 }
 
 def start_menu():
-    #func.delay_print("Välkommen till SO-Spelet version " + str(func.get_version()) + "\n", 0.25)
+    func.delay_print("Välkommen till SO-Spelet version " + str(func.get_version()) + "\n", 0.25)
     print("Välj allternativ")
     print("1. Nytt spel")
     print("2. Ladda spel")
