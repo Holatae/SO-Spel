@@ -1,3 +1,4 @@
+
 name = ""
 age = ""
 health = 0
@@ -16,7 +17,7 @@ class character():
                 pass
 
 #def attack(power_of_enemy, speed_of_enemy, health_of_enemy):
- #   pass
+#       pass
 
 def get_attacked(power_of_enemy, speed_of_enemy):
     pass

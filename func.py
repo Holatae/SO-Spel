@@ -2,11 +2,27 @@ import time
 import sys
 import player
 
-def change_name(name):
-    player.name = name
+save_list = []
 
-def save(slot):
-    pass
+
+def change_name(name):
+        player.name = name
+
+def save(character):
+        f = open("save.txt", "w")
+        save_list.append(character.speed)
+        save_list.append(character.power)
+        save_list.append(character.defense_power)
+        for item in save_list:
+                f.write(str(item) + ",")
+        f.close()
+
+
+def cheat():
+        hej = player.character(1, 2, 1)
+        save(hej)
+        
+        
 
 def load_save(slot):
     pass
