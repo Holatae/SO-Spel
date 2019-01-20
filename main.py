@@ -4,7 +4,7 @@ options = {
     1 : func.new_game,
     2 : func.load_save,
     3 : func.quit,
-    4 : func.cheat(),
+    4 : func.cheat,
     5 : func.print_details,
 
 }

@@ -1,7 +1,7 @@
 import time
 import sys
 import player
-import main
+
 
 save_list = []
 
@@ -21,17 +21,22 @@ def save(character):
 
 #Just for testing :)
 def cheat():
+        import main
         hej = player.character(1, 2, 1)
         save(hej)
         main.start_menu()
         
 #Prints stats for loaded character .. For testing
 def print_details():
-        pass
+        character = load_save()
+        print(str(character.speed) + str(character.power))
+        
         
 #Loads savefile
-def load_save(slot):
-    pass
+def load_save():
+    f = open("save.txt", "r")
+    character_stats = f.read().split(",")
+    return player.character(character_stats[0], character_stats[1], character_stats[2])
 
 
 def move_forward():
