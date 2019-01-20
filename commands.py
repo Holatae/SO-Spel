@@ -4,3 +4,7 @@ def walk(directions):
 def use(object):
     pass
 
+def help():
+    pass
+
+
