@@ -7,10 +7,10 @@ power = 0
 speed = 0
 defense_power = 0
 
-#'''
-#sClass character. This creates a character with power, speed and defense power
-#All the characters in the game should be created with this function
-#'''
+'''
+Class character. This creates a character with power, speed and defense power
+All the characters in the game should be created with this function
+'''
 class character():
         #The init function.. creates the character
         def __init__(self, power, speed, defense_power):
