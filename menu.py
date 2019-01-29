@@ -12,7 +12,7 @@ options = {
 def menu():
     print("Vad vill du göra")
     try:
-        pass
+        options[input()]
     except Exception as e:
         pass
 

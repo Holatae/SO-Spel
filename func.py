@@ -75,3 +75,6 @@ def menu(word):
     delay_print(word, 0.1)
     while True:
         input()
+
+def change_char(s, p, r):
+    return s[:p]+r+s[p+1:]
